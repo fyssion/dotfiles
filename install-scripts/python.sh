@@ -1,6 +1,13 @@
-# Install pyenv and Python
+# Install pyenv
 
 curl https://pyenv.run | bash
+
+# Load pyenv
+
+export PYENV_ROOT="$HOME/.pyenv"
+path_prepend "$PYENV_ROOT/bin"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
 
 # Install Python deps
 
