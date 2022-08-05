@@ -1,0 +1,15 @@
+- clean: ['~']
+
+- link:
+    ~/.profile:
+    ~/.gitconfig:
+    ~/.gitignore_global:
+    ~/.zshenv:
+    ~/.zshrc:
+    ~/.p10k.zsh:
+    ~/.zsh-custom: oh-my-zsh
+    ~/.shell:
+
+- shell:
+  - git submodule sync --recursive
+  - git submodule update --init --recursive
