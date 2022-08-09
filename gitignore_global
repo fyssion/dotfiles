@@ -1,1 +1,4 @@
 *.python-version
+
+# using this for lsp-pyright (sublime text plugin)
+pyrightconfig.json
