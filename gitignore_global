@@ -2,3 +2,7 @@
 
 # using this for lsp-pyright (sublime text plugin)
 pyrightconfig.json
+
+# sublime text
+*.sublime-project
+*.sublime-workspace
