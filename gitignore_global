@@ -6,3 +6,6 @@ pyrightconfig.json
 # sublime text
 *.sublime-project
 *.sublime-workspace
+
+# hatch
+.hatch/

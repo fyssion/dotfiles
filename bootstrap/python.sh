@@ -20,6 +20,14 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 pyenv install $1
 pyenv global $1
 
+# Install pipx
+
+pip install --user pipx
+
+# Install Hatch
+
+pipx install hatch
+
 # Also install Poetry
 
 curl -sSL https://install.python-poetry.org | python -
