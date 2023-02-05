@@ -19,14 +19,10 @@ popd
 
 # Make default
 SHORT_VERSION=${PYTHON_VERSION%.*}
-[ -e "/usr/bin/python3" ] && sudo rm /usr/bin/python3
-sudo ln -s /usr/local/bin/python$SHORT_VERSION /usr/bin/python3
 [ -e "/usr/bin/python" ] && sudo rm /usr/bin/python
-sudo ln -s /usr/bin/python3 /usr/bin/python
-[ -e "/usr/bin/pip3" ] && sudo rm /usr/bin/pip3
-sudo ln -s /usr/local/bin/pip$SHORT_VERSION /usr/bin/pip3
+sudo ln -s /usr/local/bin/python$SHORT_VERSION /usr/bin/python
 [ -e "/usr/bin/pip" ] && sudo rm /usr/bin/pip
-sudo ln -s /usr/bin/pip3 /usr/bin/pip
+sudo ln -s /usr/local/bin/pip$SHORT_VERSION /usr/bin/pip
 
 # Install pipx
 
