@@ -5,6 +5,8 @@
 	fixup = commit -a --amend --no-edit
 	fixmsg = commit --amend
 	update-submodules = submodule update --init --recursive
+	gll = log --graph --all --format=format:'%<|(25)%C(03)%h%C(reset)%>|(1)%s%n%<|(24)%<(1)%C(cyan)% %an (%ar)%n'
+	bd = !git diff --name-only --relative --diff-filter=d $@ | xargs bat --diff
 [include]
         path = ~/.gitconfig_local
 [color "blame"]
@@ -12,3 +14,5 @@
 [blame]
 	coloring = highlightRecent
 	date = human
+[credential]
+	helper = store
