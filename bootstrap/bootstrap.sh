@@ -3,8 +3,8 @@
 source ./functions.sh
 
 # zsh
-if prompt "Install zsh utilties?"; then
-./zsh.sh
+if prompt "Install shell utilties (zsh, fzf, fd, bat)?"; then
+./shell.sh
     echo "Done!"
 fi
 
