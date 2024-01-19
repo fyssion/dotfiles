@@ -31,6 +31,9 @@ source ~/.shell/aliases.sh
 
 path_prepend "$HOME/.local/bin"
 
+# Programs
+source ~/.shell/programs.sh
+
 if [ -f ~/.zshrc_local ]; then
     source ~/.zshrc_local
 fi
