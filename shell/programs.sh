@@ -31,6 +31,7 @@ esac
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 if [ -e ".local/bin/fd" ]; then
     export FZF_DEFAULT_COMMAND='fd --type f --strip-cwd-prefix'
+    export FZF_ALT_C_COMMAND='fd --type d --strip-cwd-prefix'
     export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 fi
 
