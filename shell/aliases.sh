@@ -7,3 +7,13 @@ ghclone() {
 mcd() {
     mkdir "${1}" && cd "${1}"
 }
+
+# python venv management shorthands
+pyactivatevenv() {
+    source ./venv/bin/activate
+}
+
+pycreatevenv() {
+    python -m venv venv
+    pyactivatevenv
+}
