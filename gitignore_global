@@ -9,3 +9,6 @@ pyrightconfig.json
 
 # hatch
 .hatch/
+
+# macos
+.DS_Store

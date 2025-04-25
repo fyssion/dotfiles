@@ -16,3 +16,5 @@
 	date = human
 [credential]
 	helper = store
+[core]
+	excludesFile = ~/.gitignore_global
